@@ -4,71 +4,50 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact – JEUS</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #003366;
-      color: white;
-      display: flex;
-      align-items: center;
-      padding: 1rem;
-    }
-    header img {
-      height: 50px;
-      margin-right: 1rem;
-    }
-    nav a {
-      color: white;
-      margin-right: 1rem;
-      text-decoration: none;
-    }
-    main {
-      padding: 2rem;
-    }
-    footer {
-      background-color: #eee;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <img src="logo.png" alt="JEUS Logo" />
-    <h1 style="flex: 1;">JEUS – Jeunesse Steinsel</h1>
+    <h1>JEUS – Jeunesse Steinsel</h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="events.html">Events</a>
     </nav>
   </header>
 
   <main>
     <h2>Contact</h2>
-    <p><strong>Address:</strong><br>
-      16 rue de l'Alzette<br>
-      L-7344 Steinsel<br>
-      Luxembourg</p>
+    <div class="content-section">
+      <p><strong>Address:</strong><br>
+        16 rue de l'Alzette<br>
+        L-7344 Steinsel<br>
+        Luxembourg</p>
 
-    <p><strong>Email:</strong> <a href="mailto: jeus@pt.lu">jeus@pt.lu</a></p>
+      <p><strong>Email:</strong> <a href="mailto:mail@jeus.lu">mail@jeus.lu</a></p>
+    </div>
 
-    <h3>Comité</h3>
-    <ul>
-      <li>Präsident: Maya Proess</li>
-      <li>Vize-Präsident: Charel Goerens</li>
-      <li>Sekretär: Marc Seiwert</li>
-      <li>Tresorier: Sonja Flühe</li>
-      <li>Membre: Mika La Terza</li>
-      <!-- Add others here -->
-    </ul>
+    <div class="content-section">
+      <h3 class="red-text">Comité</h3>
+      <ul>
+        <li>Präsident: Maya Proess - <a href="mailto:president@jeus.lu">president@jeus.lu</a></li>
+        <li>Vize-Präsident: Charel Goerens - <a href="mailto:vice-president@jeus.lu">vice-president@jeus.lu</a></li>
+        <li>Sekretär: Marc Seiwert - <a href="mailto:secretaire@jeus.lu">secretaire@jeus.lu</a></li>
+        <li>Tresorier: Sonja Fluhé - <a href="mailto:tresorier@jeus.lu">tresorier@jeus.lu</a></li>
+        <li>Membre: Mika La Terza - <a href="mailto:mika.laterza@jeus.lu">mika.laterza@jeus.lu</a></li>
+      </ul>
+    </div>
   </main>
 
   <footer>
-    &copy; 2025 JEUS – Jeunesse Steinsel
+    <p>&copy; 2025 JEUS – Jeunesse Steinsel</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/jeunesse_steesel_" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://www.facebook.com/jeus.lu" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="mailto:mail@jeus.lu"><i class="fas fa-envelope"></i> Email</a>
+    </div>
   </footer>
 </body>
 </html>

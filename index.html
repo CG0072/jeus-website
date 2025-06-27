@@ -4,55 +4,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>JEUS – Jeunesse Steinsel</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #003366;
-      color: white;
-      display: flex;
-      align-items: center;
-      padding: 1rem;
-    }
-    header img {
-      height: 50px;
-      margin-right: 1rem;
-    }
-    nav a {
-      color: white;
-      margin-right: 1rem;
-      text-decoration: none;
-    }
-    main {
-      padding: 2rem;
-    }
-    footer {
-      background-color: #eee;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <img src="logo.png" alt="JEUS Logo" />
-    <h1 style="flex: 1;">JEUS – Jeunesse Steinsel</h1>
+    <h1>JEUS – Jeunesse Steinsel</h1>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="contact.html">Contact</a>
+      <a href="events.html">Events</a>
     </nav>
   </header>
 
   <main>
-    <h2>Website under construction</h2>
+    <h2>Welcome to JEUS</h2>
+    <div class="content-section">
+      <h3 class="red-text">Website under construction</h3>
+      <p>We're working hard to bring you an amazing new website experience. Stay tuned for updates!</p>
+      <p>In the meantime, feel free to <a href="contact.html" class="btn">Contact Us</a> for any inquiries.</p>
+    </div>
   </main>
 
   <footer>
-    &copy; 2025 JEUS – Jeunesse Steinsel
+    <p>&copy; 2025 JEUS – Jeunesse Steinsel</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/jeunesse_steesel_" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://www.facebook.com/jeus.lu" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="mailto:mail@jeus.lu"><i class="fas fa-envelope"></i> Email</a>
+    </div>
   </footer>
 </body>
 </html>
