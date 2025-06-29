@@ -288,6 +288,106 @@ footer p {
   display: none; /* Hide placeholder when we have an actual image */
 }
 
+/* Homepage Hero Section */
+.hero-section {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+  background: linear-gradient(135deg, rgba(196, 30, 58, 0.05), rgba(139, 0, 0, 0.05));
+  border-radius: 12px;
+}
+
+.group-image {
+  max-width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(196, 30, 58, 0.2);
+  border: 3px solid #c41e3a;
+}
+
+/* Next Event Section */
+.next-event {
+  background: linear-gradient(135deg, rgba(196, 30, 58, 0.08), rgba(139, 0, 0, 0.08));
+  border-left: 6px solid #c41e3a;
+  position: relative;
+}
+
+.next-event::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-top: 30px solid #c41e3a;
+}
+
+.event-preview {
+  margin-top: 1rem;
+}
+
+.event-info h4 {
+  color: #c41e3a;
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+}
+
+.event-date-time {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.event-date,
+.event-time {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(196, 30, 58, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 500;
+  color: #c41e3a;
+}
+
+.event-date i,
+.event-time i {
+  color: #c41e3a;
+}
+
+.event-info p {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Event Flyer Preview on Homepage */
+.event-flyer-preview {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.event-flyer-img {
+  max-width: 100%;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(196, 30, 58, 0.2);
+  border: 2px solid #c41e3a;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-flyer-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(196, 30, 58, 0.3);
+  cursor: pointer;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   header {
@@ -351,6 +451,28 @@ footer p {
   .social-preview .btn {
     width: 100%;
     max-width: 250px;
+  }
+  
+  .hero-section {
+    padding: 1rem 0;
+  }
+  
+  .group-image {
+    height: 200px;
+  }
+  
+  .event-date-time {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .event-date,
+  .event-time {
+    justify-content: center;
+  }
+  
+  .event-flyer-img {
+    max-height: 200px;
   }
 }
 
