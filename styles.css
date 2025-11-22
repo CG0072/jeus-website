@@ -26,7 +26,8 @@ header {
 header img {
   height: 60px;
   margin-right: 1.5rem;
-  border-radius: 8px;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 header h1 {
@@ -292,18 +293,16 @@ footer p {
 .hero-section {
   text-align: center;
   margin-bottom: 2rem;
-  padding: 2rem 0;
-  background: linear-gradient(135deg, rgba(196, 30, 58, 0.05), rgba(139, 0, 0, 0.05));
-  border-radius: 12px;
+  padding: 1rem 0 0;
 }
 
 .group-image {
   max-width: 100%;
   height: 300px;
   object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(196, 30, 58, 0.2);
-  border: 3px solid #c41e3a;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
 }
 
 /* Next Event Section */
@@ -342,21 +341,26 @@ footer p {
   flex-wrap: wrap;
 }
 
-.event-date,
-.event-time {
+.next-event .event-date,
+.next-event .event-time {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background-color: rgba(196, 30, 58, 0.1);
+  background: linear-gradient(135deg, #c41e3a, #8b0000);
   padding: 0.5rem 1rem;
   border-radius: 20px;
-  font-weight: 500;
-  color: #c41e3a;
+  font-weight: 600;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(196, 30, 58, 0.3);
 }
 
-.event-date i,
-.event-time i {
-  color: #c41e3a;
+.next-event .event-date i,
+.next-event .event-time i {
+  color: #fff;
+}
+
+.next-event .event-location {
+  margin-bottom: 1rem;
 }
 
 .event-info p {
